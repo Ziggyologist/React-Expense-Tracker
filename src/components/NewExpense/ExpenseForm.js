@@ -10,29 +10,29 @@ const ExpenseForm = props => {
   //////////////   handle Title
   const handleTitle = function (event) {
     setEnteredTitle(event.target.value);
-    console.log(event.target.value);
+    // console.log(event.target.value);
   };
 
   //////////////   Handle Amount
   const handleAmount = e => {
     setEnteredAmount(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   //////////////   Handle Date
   const handleDate = function (e) {
     setEnteredDate(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   // ////////////// Handle category
   const handleCategory = function (e) {
     setCategory(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
     if (e.target.value === "car") {
       e.target.classList.add("car");
-    } else if (e.target.value === "education") {
-      e.target.classList.add("education");
+    } else {
+      e.target.classList.remove("car");
     }
   };
 
@@ -41,7 +41,7 @@ const ExpenseForm = props => {
     e.preventDefault();
     const expenseData = {
       title: enteredTitle,
-      amount: Number(enteredAmount),
+      amount: +enteredAmount,
       date: new Date(enteredDate),
       category: enteredCategory,
     };
@@ -52,9 +52,10 @@ const ExpenseForm = props => {
     setEnteredAmount("");
     setEnteredDate("");
     setCategory("");
+
     console.log("submitted");
-    console.log(expenseData);
-    console.log(expenseData.category);
+    // console.log(expenseData);
+    // console.log(expenseData.category);
   };
   return (
     <form>
@@ -112,6 +113,9 @@ const ExpenseForm = props => {
           </select>
         </div>
         <div className="new-expense__actions">
+          <button type="button" onClick={props.onCancel}>
+            Cancel
+          </button>
           <button type="submit" onClick={handleSubmit}>
             Add Expense
           </button>
