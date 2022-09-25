@@ -4,7 +4,6 @@
   width: 5.5rem;
   height: 5.5rem;
   border: 1px solid #ececec;
-  background-color: #2a2a2a;
   color: white;
   border-radius: 12px;
   align-items: center;
@@ -23,4 +22,43 @@
 .expense-date__day {
   font-size: 1.5rem;
   font-weight: bold;
+}
+.car {
+  background-color: blue;
+}
+
+.technology {
+  background-color: grey;
+}
+
+.home {
+  background-color: red;
+}
+
+.education {
+  background-color: orange;
+}
+
+.clothes {
+  background-color: palevioletred;
+}
+
+.food {
+  background-color: greenyellow;
+}
+
+.entertainment {
+  background-color: aquamarine;
+}
+
+.travel {
+  background-color: chocolate;
+}
+
+.pets {
+  background-color: darkmagenta;
+}
+
+.taxes {
+  background-color: black;
 }

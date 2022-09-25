@@ -25,7 +25,7 @@ const ExpensesChart = props => {
     console.log(expenseMonth);
   }
 
-  return <Chart dataPoints={chartDataPoints} />;
+  return <Chart dataPoints={chartDataPoints} expenses={props.expenses} />;
 };
 
 export default ExpensesChart;

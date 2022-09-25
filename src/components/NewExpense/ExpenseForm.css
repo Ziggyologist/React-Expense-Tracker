@@ -33,26 +33,3 @@ select {
   width: 20rem;
   max-width: 100%;
 }
-.car {
-  background-color: blue;
-}
-
-.technology {
-  background-color: grey;
-}
-
-.home {
-  background-color: red;
-}
-
-.education {
-  background-color: orange;
-}
-
-.clothes {
-  background-color: palevioletred;
-}
-
-.food {
-  background-color: greenyellow;
-}

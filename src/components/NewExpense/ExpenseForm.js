@@ -110,6 +110,10 @@ const ExpenseForm = props => {
             <option value="entertainment">entertainment</option>
             <option value="transportation">transportation</option>
             <option value="travel">travel</option>
+            <option value="technology">technology</option>
+            <option value="pets">pets</option>
+            <option value="taxes">taxes</option>
+            <option value="others">others</option>
           </select>
         </div>
         <div className="new-expense__actions">

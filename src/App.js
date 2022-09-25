@@ -21,15 +21,30 @@ const DUMMY_EXPENSES = [
     id: "e3",
     title: "Udemy Courses",
     amount: 417.89,
-    date: new Date(2022, 1, 20),
+    date: new Date(2022, 3, 20),
     category: "education",
   },
   {
     id: "e4",
     title: "New Laptop",
-    amount: 969.69,
+    amount: 669.69,
     date: new Date(2022, 1, 11),
     category: "technology",
+  },
+
+  {
+    id: "e5",
+    title: "Muse Concert",
+    amount: 85.99,
+    date: new Date(2022, 6, 18),
+    category: "travel",
+  },
+  {
+    id: "e6",
+    title: "Fix the car",
+    amount: 200.0,
+    date: new Date(2022, 3, 15),
+    category: "car",
   },
 ];
 const App = function () {
