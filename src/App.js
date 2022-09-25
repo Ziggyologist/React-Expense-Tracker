@@ -58,7 +58,6 @@ const App = function () {
 
   return (
     <div>
-      <h2>Budget App</h2>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
